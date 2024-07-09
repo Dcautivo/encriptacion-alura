@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Main theme color #  #6a59d1 #4ce69e #4cb2e6 #614fd0*/
+  --first-color: #0e2431;
+  --second-color: #0fcb73;
+  --third-color: #777;
+  --footer-color: #0e2431;
+  --card-bg-color: #fff;
+   /* Hover colors */
+   --hover-color: #663399;
+  
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/img/fondo.png");
+}
+
+header {
+    display: flex;
+    width: 1440px;
+    flex-direction: row;
+    margin: 25px auto 0 auto;
+    padding: 15px 50px 10px 10px;
+    color: #eadbeb;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.logos {
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.logos img {
+    height: 70px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: black;
+    border: solid 1px var(--second-color);
+}
+
+.encabezado {
+    margin: 0 auto 15px 2px;
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    color: var(--card-bg-color);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.section1, .section2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 35px;
+    overflow:hidden;
+    padding: 2px;
+    margin-top: 3rem;
+    min-height: 500px;
+}
+
+.text-area {
+    resize: none;
+    border-radius: 20px;
+    font-size: 25px;
+    background-color:var(--first-color);
+    color: var(--second-color);
+    height: 75%;
+    width: 92%;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: lowercase;
+}
+
+.informacion {
+    color: var(--card-bg-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.mensaje {
+    resize: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    font-size: 25px;
+    color:var(--second-color);
+    height: 75%;
+    width: 92%;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: lowercase;
+    background-color:var(--first-color);
+}
+
+::placeholder {
+    color: var(--second-color);
+
+}
+
+.text-area,
+.mensaje:focus {
+    outline: none;
+}
+
+.contenedor-subtitulo {
+    width: 100%;
+    height: 10%;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;    
+}
+
+.contenedor-subtitulo, .contenedor-parrafo p {
+    font-size: 1.2em;
+    font-size: 25px;
+    color: var(--card-bg-color);
+}
+
+.botones {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 15px;
+    width: 100%;
+}
+
+
+.btn-desencriptar {
+    background: #1d7fa9;
+    border-radius: 24px;
+    color:var(--card-bg-color);
+    border: none;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 20px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+.btn-encriptar {
+    background: #1d7fa9;
+    border-radius: 24px;
+    border: none;
+    color:var(--card-bg-color);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.btn-encriptar:active {
+    transform: translateY(-1px);
+}
+
+.btnc {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 25px;
+    width: 100%;    
+}
+
+.btn-copiar {
+    background: #1d7fa9;
+    border-radius: 24px;
+    border: none;
+    color: var(--card-bg-color);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 20px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: var(--footer-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--card-bg-color);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.swal2-html-container {
+    font-family: "Poppins", sans-serif;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    header,
+    main,
+    footer {
+        flex-direction: column;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    header {
+        width: auto;
+    }
+
+    .encabezado {
+        margin: 14px auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 4em;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .section1,
+    .section2 {
+        width: 90%;
+        height: auto;
+    }
+    .mensaje{
+        background-image:var(--first-color);
+    }
+    .btn-encriptar, .btn-desencriptar,.btn-copiar{
+        margin: 10px auto;
+        width: 100%;
+    }
+    .botones{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    header, main, .copy {
+        flex-direction: column;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    header,
+    main,
+    .copy {
+        width: auto;
+        text-align: center;
+    }
+    
+    .section1,
+    .section2 {
+        width: 80%;
+        height: auto;
+    }
+   
+    .mensaje{
+        background-image: var(--first-color);
+    }
+
+    .contenedor-parrafo {
+        font-size: 15px;
+        padding: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-encriptar, .btn-desencriptar,.btn-copiar{
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 390px) {
+
+    .text-area, .informacion, .btn-desencriptar, .btn-encriptar, .btn-copiar, .copy {
+        font-size: 20px;
+    }
+
+    .informacion, .contenedor-subtitulo {
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .contenedor-parrafo {
+        font-weight: 100;
+    }
+
+    .encabezado {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
