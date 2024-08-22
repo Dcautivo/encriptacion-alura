@@ -224,8 +224,7 @@ main {
 footer {
     position: absolute;
     width: 100%;
-    margin-top: 50px;
-    justify-content: center;
+    bottom: 0;
     background-color: var(--footer-color);
     font-family: "Poppins", sans-serif;
 }
